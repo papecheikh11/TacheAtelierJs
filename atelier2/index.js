@@ -6,16 +6,17 @@
 // // renvoie : 2.6
 
 
-let tab = [5, 1, 1, 1, 5];
-let somme = 0
-let moyenne = 0
-
-function numAverage(){
-    for(let i = 0; i < tab.length; i++){
+function numAverage(maFonction){
+    let somme = 0
+    let moyenne = 0
+    for(let i = 0; i < tab.length; i++ ){
         somme += tab[i]
+        moyenne = somme/tab.length
     }
-     moyenne = somme/tab.length
-
-     return moyenne
+    return moyenne
 }
-console.log(numAverage);
+
+const tab = [5, 1, 1, 1, 5]
+
+let monTableau = numAverage(tab)
+console.log(monTableau);
