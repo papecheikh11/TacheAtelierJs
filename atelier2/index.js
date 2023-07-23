@@ -10,7 +10,7 @@ function numAverage(maFonction){
     let somme = 0
     let moyenne = 0
     for(let i = 0; i < tab.length; i++ ){
-        somme += tab[i]
+        somme += maFonction[i]
         moyenne = somme/tab.length
     }
     return moyenne
