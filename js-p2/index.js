@@ -122,12 +122,40 @@ window.addEventListener("load", () => {
 
 //--------------------------------------------------
 //Foreach
-const boxes = document.querySelectorAll(".box");
+// const boxes = document.querySelectorAll(".box");
 
-console.log(boxes);
-boxes.forEach((box) => {
-  box.addEventListener("click", (e) => {
-    console.log(e.target);
-    e.target.style.transform = "scale(0.7)";
-  });
+// console.log(boxes);
+// boxes.forEach((box) => {
+//   box.addEventListener("click", (e) => {
+//     console.log(e.target);
+//     e.target.style.transform = "scale(0.7)";
+//   });
+// });
+//----------------------------------------------
+// addEventListener vs onclick
+
+// document.body.onclick = function () {
+//   console.log("Scroll !");
+// };
+
+//Bubbling => fin (de base l'eventlistener est paramétré en mode bubbling)
+document.body.addEventListener("click", () => {
+  console.log("click 1");
+});
+//Use capture
+document.body.addEventListener(
+  "click",
+  () => {
+    console.log("click 2");
+  },
+  true
+);
+
+//--------------------------------------
+
+// Stop propagation
+
+questionContainer.addEventListener("click", (e) => {
+  alert("test !");
+  e.stopPropagation();
 });
