@@ -155,7 +155,65 @@ document.body.addEventListener(
 
 // Stop propagation
 
-questionContainer.addEventListener("click", (e) => {
-  alert("test !");
-  e.stopPropagation();
+// questionContainer.addEventListener("click", (e) => {
+// alert("test !");
+// e.stopPropagation();
+// });
+
+//----------------------------------
+//BOM
+
+// window.open("http://google.com", "cours js", "height = 400");
+//window.close() pour fermer la fenetre
+
+btn2.addEventListener("click", () => {
+  confirm("Voulez vous vraiment ça ?");
+});
+
+//prompt
+btn1.addEventListener("click", () => {
+  let answer = prompt("Entrer votre reponse !");
+
+  questionContainer.innerHTML += "<h3>Bravo " + answer + "</h3>";
+});
+
+setTimeout(() => {
+  questionContainer.style.borderRadius = "300px";
+}, 2000);
+
+let interval = setInterval(() => {
+  // document.body.innerHTML += "<div class='box'><h3>Nouvelle boite !</h3></div>";
+}, 1000);
+document.body.addEventListener("click", (e) => {
+  console.log(e.target);
+  clearInterval(interval);
+});
+
+// Location
+
+// console.log(location.href);
+// console.log(location.host);
+// console.log(location.pathname);
+// console.log(location.search);
+// location.replace("http://lequipe.fr");
+
+// window.onload = () => {
+//   location.href = 'http://twitter.fr'
+// }
+
+//Navigator
+// console.log(navigator.userAgent);
+
+//history
+// console.log(history);
+// window.history.back()
+// history.go(-2)
+
+//--------------------------------------
+//set property
+
+window.addEventListener("mousemove", (e) => {
+  console.log(e);
+  nav.style.setProperty("--x", e.layerX + "px");
+  nav.style.setProperty("--y", e.layerY + "px");
 });
