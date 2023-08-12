@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les cinq bouttons</title>
+</head>
+<body>
+    <div class="click-event"></div>
+    <div class="madiv">
+        <button  class="my-button" id="btn-1">10px</button>
+        <button  class="my-button" id="btn-2">15px</button>
+        <button  class="my-button" id="btn-3">20px</button>
+        <button  class="my-button" id="btn-4">30px</button>
+        <button  class="my-button" id="btn-5">40px</button>
+    </div>
+
+    <style>
+        .my-button{
+            margin-left: 10px;
+        }
+        .madiv{
+            width:50px;
+            height:20px;
+            margin:auto;
+            margin-top: 50px;
+            display: flex;
+        }
+        .click-event{
+            width: 150px;
+            height: 150px;
+            background-color: #353232;
+            transition: all 2s ease;
+            margin: auto;
+        }
+    </style>
+
+    <script src="button.js"></script>
+</body>
+</html>
