@@ -166,28 +166,28 @@ document.body.addEventListener(
 // window.open("http://google.com", "cours js", "height = 400");
 //window.close() pour fermer la fenetre
 
-btn2.addEventListener("click", () => {
-  confirm("Voulez vous vraiment ça ?");
-});
+// btn2.addEventListener("click", () => {
+//   confirm("Voulez vous vraiment ça ?");
+// });
 
 //prompt
-btn1.addEventListener("click", () => {
-  let answer = prompt("Entrer votre reponse !");
+// btn1.addEventListener("click", () => {
+//   let answer = prompt("Entrer votre reponse !");
 
-  questionContainer.innerHTML += "<h3>Bravo " + answer + "</h3>";
-});
+//   questionContainer.innerHTML += "<h3>Bravo " + answer + "</h3>";
+// });
 
-setTimeout(() => {
-  questionContainer.style.borderRadius = "300px";
-}, 2000);
+// setTimeout(() => {
+//   questionContainer.style.borderRadius = "300px";
+// }, 2000);
 
-let interval = setInterval(() => {
-  // document.body.innerHTML += "<div class='box'><h3>Nouvelle boite !</h3></div>";
-}, 1000);
-document.body.addEventListener("click", (e) => {
-  console.log(e.target);
-  clearInterval(interval);
-});
+// let interval = setInterval(() => {
+//   // document.body.innerHTML += "<div class='box'><h3>Nouvelle boite !</h3></div>";
+// }, 1000);
+// document.body.addEventListener("click", (e) => {
+//   console.log(e.target);
+//   clearInterval(interval);
+// });
 
 // Location
 
@@ -212,8 +212,8 @@ document.body.addEventListener("click", (e) => {
 //--------------------------------------
 //set property
 
-window.addEventListener("mousemove", (e) => {
-  console.log(e);
-  nav.style.setProperty("--x", e.layerX + "px");
-  nav.style.setProperty("--y", e.layerY + "px");
-});
+// window.addEventListener("mousemove", (e) => {
+//   console.log(e);
+//   nav.style.setProperty("--x", e.layerX + "px");
+//   nav.style.setProperty("--y", e.layerY + "px");
+// });
