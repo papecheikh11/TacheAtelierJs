@@ -1,0 +1,22 @@
+
+.my-button{
+    margin-left: 10px;
+        }
+.madiv{
+     width:50px;
+     height:20px;
+     
+     margin-top: 50px;
+     display: flex;
+}
+.click-event{
+    width: 150px;
+    height: 150px;
+     background-color: #353232;
+    transition: all 2s ease;
+    margin: auto;
+}
+
+#btn-1{
+    /* border-radius: 20px; */
+}

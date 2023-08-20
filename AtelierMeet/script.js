@@ -1,6 +1,7 @@
 const btn1 = document.querySelector("#btn1");
 
-btn1.addEventListener("click", () => {
+btn1.addEventListener("click", creer);
+function creer() {
   let leTexte = document.querySelector("#letexte").value;
   const affichage = document.getElementById("affichage");
   const Faffichage = document.getElementById("Faffichage");
@@ -27,4 +28,4 @@ btn1.addEventListener("click", () => {
   document.getElementById("mabalise").value = "";
   document.getElementById("letexte").value = "";
   console.log(maBalise);
-});
+}
