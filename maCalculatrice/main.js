@@ -1,4 +1,4 @@
-//declaration des variables
+//---------------------- declaration des variables -------------------
 
 const entrerNombre = document.querySelector("#nombreEntrer");
 let bouttons = document.querySelectorAll(".boutton");
@@ -7,13 +7,15 @@ let nFinal = document.querySelector("#nombreDessous");
 let resultat = 0;
 let nbreDessous;
 
-//les fonctions
+//--------------------- les fonctions ------------------------------
 
 function nombres(nombre) {
-  resultat += nombre;
   entrerNombre.value += nombre;
+  resultat += nombre;
   nbreDessous = resultat;
 }
+
+// ------------------ Fonctions pour les operations -----------------------
 
 function operations(operation) {
   entrerNombre.value = operation;
@@ -21,9 +23,13 @@ function operations(operation) {
   nFinal.value = eval(nbreDessous);
 }
 
+// ------------------- Fonction pour le resultat -----------------------
+
 function mesCalculs() {
   entrerNombre.value = eval(resultat);
 }
+
+// ------------------ Fonctions pour les bouttons de suppression----------------
 
 function supprimerUn() {
   entrerNombre.value = "";
@@ -35,4 +41,5 @@ function supprimerTout() {
   entrerNombre.value = "";
   nFinal.value = "";
   resultat = "";
+  nbreDessous = 0;
 }

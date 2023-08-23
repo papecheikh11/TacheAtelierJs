@@ -59,11 +59,17 @@
               <h6 class="text-center"><a href="" class="text-decoration-none text-black">Ma calculatrice toute simple: </a><a href="">Calculatrice simple</a></h6>
             </div>
             <hr>
-            <div class="nombreEntrer m-0 p-0">
+
+            <!-- --------------------- Affichage des nombres saisies ----------------------- -->
+
+            <div class="nombreEntrer">
               <input type="text" id="nombreEntrer" class="col-12 fw-bold text-end" placeholder="0" disabled>
               <input type="text" id="nombreDessous" class="col-12  fw-bold " placeholder="0" disabled>
             </div>
             <div class="row mes-btn">
+
+              <!-- ------------------- Entrer des Nombres ------------------ -->
+
               <div class="col-7 les-btn">              
                   <button id="btn-7" class="boutton" onclick="nombres('7')">7</button>
                   <button id="btn-8" class="boutton" onclick="nombres('8')">8</button>
@@ -78,15 +84,24 @@
                   <button id="btn-point" class="boutton">.</button>
               </div>
               <div class="col-5 signe">
+
+                  <!-- --------------- Les bouttons supprimer ------------- -->
+
                 <button id="btn-CE" class="boutton" onclick="supprimerUn()">CE</button>
                 <button id="btn-C" class="boutton" onclick="supprimerTout()">C</button>
+
+                <!-- --------------Les operations a faire---------------- -->
+
                 <button id="btn-div" class="boutton" onclick="operations('/')">/</button>
                 <button id="btn-mult" class="boutton" onclick="operations('*')">*</button>
                 <button id="btn-moins" class="boutton" onclick="operations('-')">-</button>
                 <button id="btn-plus" class="boutton" onclick="operations('+')">+</button>
+
+                <!-- ------------------ Le resultat----------------------- -->
+
                 <button id="btn-egal" class="boutton" onclick="mesCalculs()">=</button>
               </div>
-
+              <!-- ----------------- Bouttons separer milliers ---------------- -->
               <div class="col-8">
                 <input type="button" value="Separer milliers*" class="boutton-s">
               </div>
