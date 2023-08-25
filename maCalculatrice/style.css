@@ -24,13 +24,17 @@ hr{
     border: 5px ridge rgba(22, 21, 21, 0.329);
 }
 .nombreEntrer{
-    height: 100px;
+    height: 115px;
     background: #ffffff;
     border-bottom: 2px solid black;
     outline: none;
 }
 #nombreEntrer{
     font-size: 3em;
+}
+#nombreDessous{
+    font-size: 1.8em;
+    margin-bottom: 5px;
 }
 
 .les-btn{
