@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(180, 240, 220);
+}
+
+.corps{
+    margin-top: 150px;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    width: 50%;
+    border-radius: 10px;
+    
+}
+
+input{
+    padding: 0;
+    width: 100%;
+    border: 0;
+    height: 2rem;text-align: end;
+    font-size: 1.2rem;
+}
+
+input:hover, button:hover{
+    cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    appearance: none;
+    margin: 0;
+}
+
+.bill-inputs__label .error{
+    color: #ff967e
+}
+
+.bill-inputs__input input{
+    padding-right: 1rem;
+}
+
+.bill-inputs__input input.error{
+    border: 2px solid #ff967e;
+}
+
+.bgwhite{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.bgblue{
+    background-color: hsl(183, 100%, 15%);
+}
+.reset{
+    width: 90%;
+    background-color: rgb(180, 240, 220);
+}
+li{
+    list-style: none;
+}
+
+.choice{
+    width: 78px;
+}
+.titre-amount{
+    font-size: 1em;
+}
+.para-pers{
+    font-size: 12px;
+    opacity: 0.6;
+}
