@@ -25,9 +25,19 @@ function validate() {
     let parent = element.parentElement;
 
     //pour remplissage vide des inputs
-    if (element.value == "") {
+    if (!element.value) {
       element.style.borderColor = "red";
       parent.querySelector("small").innerText = "remplir ce champ";
+
+      validation = false;
+    } else if (monthInput.value == "") {
+      monthInput.style.borderColor = "red";
+      monthInput.querySelector("small").innerText = "remplir ce champ";
+
+      validation = false;
+    } else if (dayInput.value == "") {
+      dayInput.style.borderColor = "red";
+      dayInput.querySelector("small").innerText = "remplir ce champ";
       validation = false;
     } else {
       //condition pour les années
