@@ -56,5 +56,25 @@ bouttonCustom.addEventListener("input", (event) => {
 
 numberOfpeopleInput.addEventListener("input", (event) => {
   numberOfpeopleErrors = document.querySelectorAll("#peopleLabel .error");
-  numberOfpeopleErrors.forEach(numberOfpeopleErrors);
+  numberOfpeopleErrors.forEach((numberOfpeopleError) => {
+    numberOfPeopleLabel.removeChild(numberOfpeopleError);
+  });
+  numberOfpeopleInput.classList.remove(error);
+
+  if (event.target.value === "0") {
+    const errorSpan = document.createElement("span");
+    errorSpan.innerText = "can't be zero";
+    errorSpan.classList.add("error");
+    numberOfpeopleInput.classList.add("error");
+    numberOfPeopleLabel.appendChild(errorSpan);
+  } else if (event.target.value.includes(".")) {
+    const errorSpan = document.createElement("span");
+    errorSpan.innerText = "can't be a decimal value";
+    errorSpan.classList.add("error");
+    numberOfpeopleInput.classList.add("error");
+    numberOfPeopleLabel.appendChild(errorSpan);
+  } else {
+    numberOfPeople = +event.target.value;
+    calculateTipAndTotal();
+  }
 });

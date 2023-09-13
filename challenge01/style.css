@@ -58,6 +58,8 @@ li{
 
 .choice{
     width: 78px;
+    background-color: hsl(183, 100%, 15%);
+    color: beige;
 }
 .titre-amount{
     font-size: 1em;
