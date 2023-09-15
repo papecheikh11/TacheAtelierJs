@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Mon premier challenge</title>
+    <title>Tip Calculator</title>
 </head>
 <body>
-    <div class="container corps">
-        <div class="row">
-            <div class="col-lg-6 bgwhite">
-                <input type="number" id="montant" name="montant" min="0" step="any" placeholder="0" class="bill-inputs__input">
-                <div class="container">
-                    <div class="row bill-inputs">
-                        <label for="tip" class="bill-inputs__label">select type %</label>
-                            <ul class="tip-grid d-flex flex-wrap gap-3">
-
-                            <li><button class="choice" value="5" type="button"> 5%</button></li>
-                            <li><button class="choice" value="10" type="button">10%</button></li>
-                            <li><button class="choice" value="15" type="button">15%</button></li>
-                            <li><button class="choice" value="25" type="button">25%</button></li>
-                            <li><button class="choice" value="50" type="button">50%</button></li>
-                            <li><input  class="choice" type="number" name="tip" id="tip" min="0" step="1" placeholder="Custom"></li>
-                        </ul>
+    <header>
+        <h1>SPLI <br> TTER</h1>
+    </header>
+    <main>
+        <section id="bill-inputs" class="bill-inputs">
+            <div class="bill-inputs__wrapper">
+                <div class="bill-inputs__input-group">
+                    <label for="bill" class="bill-inputs__label">Bill</label>
+                    <div class="bill-inputs__input">
+                        <div>
+                            <img src="images/icon-dollar.svg" alt="">
                         </div>
+                        <input type="number" name="bill" id="bill" min="0" step="any" placeholder="0">
+                    </div>
                 </div>
-                <div class="container people">
-                    <label for="people" id="peopleLabel"><span>Number of people</span></label>
-                    <input type="number" min="0" step="1" id="people" name="people" placeholder="0" class="number-people bill-inputs__input">
+
+                <div class="bill-inputs__input-group">
+                    <label for="tip" class="bill-inputs__label">Select Tip %</label>
+                    <ul class="tip-grid">
+                        <li class="tip-grid__tip-choice"><button value="5" type="button"> 5%</button></li>
+                        <li class="tip-grid__tip-choice"><button value="10" type="button">10%</button></li>
+                        <li class="tip-grid__tip-choice"><button value="15" type="button">15%</button></li>
+                        <li class="tip-grid__tip-choice"><button value="25" type="button">25%</button></li>
+                        <li class="tip-grid__tip-choice"><button value="50" type="button">50%</button></li>
+                        <li class="tip-grid__tip-choice"><input  type="number" name="tip" id="tip" min="0" step="1" placeholder="Custom"></li>
+                    </ul>
+                </div>
+
+                <div class="bill-inputs__input-group">
+                    <label for="people" id="peopleLabel" class="bill-inputs__label"><span>Number of people</span></label>
+                    <div class="bill-inputs__input">
+                        <div>
+                            <img src="images/icon-person.svg" alt="">
+                        </div>
+                    </div>
+                    <input type="number" min="0" step="1" id="people" name="people" placeholder="0" >
                 </div>
             </div>
-            <div class="col-lg-6 bgblue">
-                <div class="container">
-                        <div class="col-12 text-light">
-                                <div class="row">
-                                    <div class="col-6 tip-amount">
-                                        <p class="titre-amount">Tip Amount</p>
-                                           <p class="para-pers">/ person</p>
-                                    </div>
-                                    <div class="col-6 result-tip">
-                                        <h3>$0.00</h3>
-                                    </div>
-                                </div>
-                            <div class="row">
-                                <div class="col-6 total-amount">
-                                    <p class="titre-amount">Total Amount</p>
-                                       <p class="para-pers">/ person</p>
-                                </div>
-                                <div class="col-6 result-total">
-                                    <h3>$0.00</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="col-12 reset">RESET</button>
-                </div>
-                
-            </div>
-        </div>        
-    </div>
+        </section>
 
-    
+        <section id="result" class="result">
+            <div class="result__wrapper">
+                <div class="result__tip-amount">
+                    <p>Tip Amount <br> <span>/person</span></p>
+                    <h3>$0.00</h3>
+                </div>
+
+                <div class="result__total-bill">
+                    <p>Total <br> <span>/person</span></p>
+                    <h3>$0.00</h3>
+                </div>
+
+                <button type="button">RESET</button>
+            </div>
+        </section>
+    </main>
 
 
     <script src="challenge.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
+
