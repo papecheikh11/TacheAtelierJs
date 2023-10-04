@@ -33,3 +33,7 @@ tbody tr{
     color: aliceblue;
 
 }
+
+#modifier{
+    display: none;
+}
