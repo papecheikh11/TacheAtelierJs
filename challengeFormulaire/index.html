@@ -12,8 +12,8 @@
     <div class="container">
         <h5 class="text-center my-5">Jeemacoder gestion utilisateurs</h5>
 
-        <div class="col-8 d-flex flex-item">
-            <form class="row g-3 needs-validation" novalidate>
+        <div class="col-6 d-flex flex-item m-auto">
+            <form class="row g-3 needs-validation">
                 <div class="col-md-6">
                   <label for="prenom" class="form-label">Prenom</label>
                   <input type="text" class="form-control" id="prenom" >
@@ -25,18 +25,13 @@
                 <div class="col-md-6">
                   <label for="mail" class="form-label">Email</label>
                   <input type="email" class="form-control" id="mail" >
-                  <!-- <div class="invalid-tooltip">
-                  </div> -->
                 </div>
                 <div class="col-md-6 ">
                   <label for="telephone" class="form-label">Telephone</label>
                   <input type="text" class="form-control" id="telephone" >
-                  <!-- <div class="invalid-tooltip">
-                    Please provide a valid zip.
-                  </div> -->
                 </div>
                     <div>
-                        <input class=" col-12 w-100 btn btn-success my-3" type="button" value="Ajouter" id="ajouter" onclick="addUser()">
+                        <input class=" col-12 w-100 btn btn-success my-3" type="button" value="Ajouter" id="ajouter">
                       </div>
                 
               </form>
@@ -53,7 +48,7 @@
                 <th>Action</th>
             </tr>
         </thead>
-        <tbody id="utilisateur"></tbody>
+        <tbody id="users"></tbody>
     </table>
     
 
