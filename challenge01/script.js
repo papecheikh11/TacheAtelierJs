@@ -26,7 +26,7 @@ const calculateTipAndTotal = () => {
       (bill * (tipAmountPercentage / 100)) /
       numberOfPeople
     ).toFixed(2)}`;
-    totalBillDom.innerText`$${(bill / numberOfPeople).toFixed(2)}`;
+    totalBillDom.innerText = `$${(bill / numberOfPeople).toFixed(2)}`;
   }
 };
 
@@ -45,8 +45,8 @@ tipButtons.forEach((button) => {
       button.classList.add("active");
       tipAmountPercentage = +button.value;
     }
-    calculateTipAndTotal();
   });
+  calculateTipAndTotal();
 });
 
 customTipButtons.addEventListener("input", (event) => {
@@ -67,6 +67,8 @@ numberOfPeopleInput.addEventListener("input", (event) => {
     errorSpan.classList.add("error");
     numberOfPeopleInput.classList.add("error");
     numberOfPeopleLabel.appendChild(errorSpan);
+
+    console.log(errorSpan);
   } else if (event.target.value.includes(".")) {
     const errorSpan = document.createElement("span");
     errorSpan.innerText = "can't be a decimal value";
@@ -77,4 +79,16 @@ numberOfPeopleInput.addEventListener("input", (event) => {
     numberOfPeople = +event.target.value;
     calculateTipAndTotal();
   }
+});
+
+resetButton.addEventListener("click", () => {
+  tipAmountPercentage = 0;
+  bill = 0;
+  numberOfPeople = 0;
+  billInput.value = "";
+  tipButtons.forEach((button) => button.classList.remove("active"));
+  customTipButtons.value = "";
+  numberOfPeopleInput.value = "";
+  tipAmountDom.innerText = "$0.00";
+  totalBillDom.innerText = "$0.00";
 });
