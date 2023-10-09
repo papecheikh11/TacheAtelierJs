@@ -79,3 +79,12 @@ console.log(`la derniere entreprise est de ${itCompanies[6].toUpperCase()}`);
 console.log(`voici votre tableau ${itCompanies.join(', ')}`);
 
 // Vérifiez si une certaine entreprise existe dans le tableau itCompanies. Si elle existe retournez l'entreprise sinon retournez une entreprise introuvable
+let monIndex = itCompanies.indexOf('whatsap')
+if (monIndex == -1) {
+    console.log(`l'entreprise  n'existe pas`);
+}
+else{
+    console.log(`L'entreprise exixte`);
+}
+
+// Filtrez les entreprises qui ont plus d'un « o » sans la méthode de filtrage
