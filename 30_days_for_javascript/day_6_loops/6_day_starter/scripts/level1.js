@@ -128,3 +128,23 @@ for (let k = 0; k <= tab.length; k++) {
 console.log("-----------------------------");
 
 // Utilisez la boucle for pour parcourir de 0 à 100 et imprimer uniquement les nombres pairs
+for (let i = 0; i <= 100; i++) {
+  let n = i % 2;
+  if (n == 0) {
+    console.log(`Ceci: ${i} est un nombre paire`);
+  }
+}
+
+console.log("-----------------------------");
+
+// Utilisez la boucle for pour parcourir de 0 à 100 et imprimer uniquement les nombres impairs
+for (let i = 0; i <= 100; i++) {
+  let n = i % 2;
+  if (n !== 0) {
+    console.log(`Ceci: ${i} est un nombre impaire`);
+  }
+}
+
+console.log("-----------------------------");
+
+// Utilisez la boucle for pour parcourir de 0 à 100 et imprimer uniquement les nombres premiers
