@@ -31,7 +31,7 @@ ajouter.addEventListener("click", function () {
 });
 
 function supprimer() {
-  //   users.innerHTML = "";
+    users.removeChild() 
 }
 function editer(index) {
     modifier.style.display = "block"
