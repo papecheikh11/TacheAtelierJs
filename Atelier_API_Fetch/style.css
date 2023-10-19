@@ -1,0 +1,31 @@
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer; 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ul li span i{
+    margin-right: 100px;
+    background-color: #000501;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 20px;
+} */
+
+ul li span button:hover{
+    background-color: #571717;
+}
+
+li button{
+    justify-content: end;
+    background-color: #b91212;
+    color: #fff;
+}
+
+
