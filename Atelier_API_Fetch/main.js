@@ -12,17 +12,13 @@ async function getTodo() {
 
       const btnFini = document.createElement("button");
       btnFini.textContent = "Terminer";
-      const btnModif = document.createElement('button')
-      btnModif.textContent = "Modifier";
 
       btnFini.addEventListener("click", () => {
         listItem.remove();
         todoList.insertBefore(listItem, todoList.firstChild);
         // Déplacer le todo vers les taches terminés
         todoListFini.appendChild(listItem);
-        btnModif.textContent = "details";
         btnFini.textContent = "Non Terminer";
-      listItem.appendChild(btnModif)
 
 
         btnFini.addEventListener("click", () => {
