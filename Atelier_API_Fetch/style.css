@@ -24,10 +24,30 @@ li button{
 .notif{
     border: none;
     font-size: 30px;
-    display: flex;
-    
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
 }
-.notif p {
-    font-size: 8px;
+.notif::before{
+    content: attr(data-counter);
+    background: #b91212;
+    position: absolute;
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    right: -8px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bolder;
 }
+
+
+.afficheNotif{
+   display: none;
+}
+
+.afficheNotif.isVisible{
+    display: block;
+}
+
 
