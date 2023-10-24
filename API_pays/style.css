@@ -5,12 +5,16 @@
 body{
     margin: 0;
     font-family: Nunito, sans-serif;
-    background-color: #f5e9e9;
+    background-color: #a0f3ef;
 }
 
 .maMode{
-    background-color: rgba(24, 22, 22, 0.884);
+    background-color: rgba(51, 49, 49, 0.884);
     color: #fff;
+}
+
+i{
+    color: black;
 }
 
 main{
@@ -39,6 +43,10 @@ a {
     font-weight: 800;
 }
 
+.mes-input{
+    display: flex;
+    justify-content: space-between;
+}
 .rechercher {
     margin-left: 16px;
     background-color: #fff;
@@ -50,15 +58,26 @@ a {
     align-items: center;
     padding: 5px 10px;
     margin-left: 50px;
+}
 
+.continent{
+    margin-left: 16px;
+    background-color: #fff;
+    width: 255px;
+    height: 30px;
+    padding: auto;
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin-left: 50px;
 }
 
 .rechercher i{
     cursor: pointer;
 }
 
-input{
-
+input, select{
     margin: auto;
     outline: none;
     border: none;
