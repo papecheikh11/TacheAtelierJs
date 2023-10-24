@@ -7,6 +7,8 @@ async function mesPays(api){
         .then((res) => res.json())
         .then((data) => {
         data.forEach((pays) => {
+            console.log(pays);
+            
         const countryCard = document.createElement("a");
         countryCard.classList.add("country-card");
         countryCard.href = `country.html?name=${pays.name.common}`;

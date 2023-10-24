@@ -5,7 +5,7 @@
 body{
     margin: 0;
     font-family: Nunito, sans-serif;
-    background-color: #a0f3ef;
+    background-color: #bdeae8;
 }
 
 .maMode{
@@ -134,5 +134,13 @@ input, select{
 @media(max-width: 768px){
     .countries-container{
         justify-content: center;
+    }
+
+    .title{
+        font-size: 16px;
+    }
+
+    .header-content p{
+        font-size: 12px;
     }
 }
